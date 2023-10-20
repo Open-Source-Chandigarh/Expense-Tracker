@@ -25,3 +25,6 @@ Bonus Features:
 3.A big space listing all the transactions (can be scrolled)<br>
 4.Add money button 
 
+Project by: Rehan Chalana
+Maintained by: Bama Charan Chhandogi, Technical Head, Open Source Chandigarh
+

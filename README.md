@@ -16,7 +16,7 @@ Bonus Features:
 1.Showing continuously the budget <br>
 2.Add Transaction Budget <br>
 3.A big space listing all the transactions (can be scrolled)<br>
-4.Adding money button 
+4.Adding money button. 
 
 Project by: Rehan Chalana
 

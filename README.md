@@ -26,5 +26,7 @@ Bonus Features:
 4.Add money button 
 
 Project by: Rehan Chalana
+
 Maintained by: Bama Charan Chhandogi, Technical Head, Open Source Chandigarh
+
 

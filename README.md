@@ -1,14 +1,7 @@
 Click the link to Try
 https://rehanchalana.github.io/FEE-Project/
 
-# FEE-Project
-
-
- this is our git hub repositry for fee project
-
-
- #info given by chitkara
- 23. Expense Tracker
+# Expense Tracker
 Objective: Develop an app that helps users track their expenses and manage budgets.
 Approach:
 - Design the HTML layout with input fields for expenses and budget categories.
@@ -19,7 +12,7 @@ Bonus Features:
 - Implement a budget planner feature to set monthly spending limits.
 - Add local storage support for data persistence.
 
-#what we need to add on this project/basic html structure<br>
+#What we need to add on this project/basic html structure<br>
 1.continuously Balance showing <br>
 2.Add Transaction Budget <br>
 3.A big space listing all the transactions (can be scrolled)<br>

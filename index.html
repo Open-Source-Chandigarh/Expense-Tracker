@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
     <div class="detailBox">
         <div class="inputBox">
             <h2>Wallet Details</h2>
@@ -16,7 +23,7 @@
             <input id="budgetAmount" class="setBudget" type="number" placeholder="Rs 0000.00">
             <label>Password</label>
             <input type="password" placeholder="enter your password">
-            <a href="./DashBoard.html"><button onclick=changeBalance() id=addBudget>Submit</button></a>
+            <a href="./DashBoard.html"><button onclick="changeBalance()" id="addBudget">Submit</button></a>
         </div>
     </div>
 </body>

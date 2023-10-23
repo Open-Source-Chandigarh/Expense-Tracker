@@ -5,20 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>start</title>
     <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
 </head>
 <body>
-    <div class="detailBox">
-        <div class="inputBox">
-            <h2>Wallet Details</h2>
-            <label>Wallet Name</label>
-            <input type="text" placeholder="User's Wallet">
-            <label>Set/Change Budget</label>
-            <input id="budgetAmount" class="setBudget" type="number" placeholder="Rs 0000.00">
-            <label>Password</label>
-            <input type="password" placeholder="enter your password">
-            <a href="./DashBoard.html"><button onclick=changeBalance() id=addBudget>Submit</button></a>
+    <section>
+        <div class="Box">
+            <form action="./DashBoard.html">
+                <div class="heading"><h2>Wallet Details</h2></div>
+                <div class="input-box">
+                    <input type="text" required>
+                    <label>Wallet Name</label>
+                </div>
+                <div class="input-box">
+                    <input id="budgetAmount" class="setBudget" type="number" required>
+                    <label>Set/Change Budget</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <button onclick=changeBalance() id=addBudget>Submit</button>
+            </form>
         </div>
-    </div>
+    </section>
 </body>
 <!-- <script src="script.js"></script> -->
 </html>

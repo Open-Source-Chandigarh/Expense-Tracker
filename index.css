@@ -1,77 +1,95 @@
 *{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
 }
-body {
+section {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(./images/black-elegant-background-with-copy-space.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-}
-/* .detailBox {
-    padding: 70px 180px 70px 180px;
-    background-color: black;
-} */
-
-.inputBox {
-    opacity: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* align-items: center; */
-}
-
-.inputBox{
-    align-self: stretch;
-    padding: 20px;
-    /* background-color: aqua; */
-    gap: 8px;
-    border:solid white ;
-}
-
-.inputBox > input,select,button {
-    padding: 10px 8px 10px 8px;
-    margin-top: 3px;
-}
-
-/* .addTrans > input,select,option,button {
-    color: black;
-}*/
-
-.inputBox > input,select {
-    background-color: black;
-    color: white;
-    opacity: 0.8;
-    border: solid #720e9e 1px;
-    font-size: large;
-}
-
-.inputBox > label {
-    font-size: large;
-    color: white;
-}
-
-.inputBox > h2 {
-    font-size: xx-large;
-    margin-bottom: 10px;
-    color: #9932cc;
-    border-bottom: solid white 1px;
-}
-
-a{
-    margin: 0;
-    padding: 0;
-}
-
-a > button {
     width: 100%;
-    opacity: 0.75;
-    background-color: #720e9e;
-    color: white;
-    font-size: larger;
-    font-weight: 700;
-    margin-top: 18px
+    height: 100vh;
+    background: url(./images/black-elegant-background-with-copy-space.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.Box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: rgba(255, 255, 255, 0.733);
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+@keyframes fade {
+    0%{
+        opacity: 0;
+        transform: translateY(70px) scale(0.5);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.heading h2{
+    font-size: 2em;
+    color: #9932cc;
+    text-align: center;
+}
+.input-box{
+    position: relative;
+    width: 310px;
+    margin: 30px 0;
+    border-bottom: 2px solid #720e9e;
+}
     
+.input-box label{
+    position: absolute;
+    top:50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #000000;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+.input-box input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #fff;
+    padding: 0 35px 0 5px;
+}
+button{
+    width: 100%;
+    height: 40px;
+    background-color: #9932cc;
+    border: none;
+    outline: none;
+    border-radius: 40px ;
+    cursor: pointer;
+    font-size: 1.4em;
+    color: #000;
+    font-weight: 500;
+    transition: all 0.9s;
+}
+button:hover{
+    color: white;
+    background-color: #720e9e;
 }

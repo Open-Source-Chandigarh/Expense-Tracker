@@ -7,6 +7,7 @@
     <title>Pocket DeX</title>
 </head>
 <body>
+    <div class="preloader"></div>
     <div class="header">
         <h2 id="mainTitle">Expense Tracker</h2>
     </div>
@@ -109,5 +110,15 @@
     Copyright 	&#169; Rehan Ridham Rishav
 </div>
 </body>
+<script>
+    var loader = document.getElementById("preloader");
+  
+    window.addEventListener("load", function(){
+      
+      
+      loader.style.display="none";
+    })
+  
+  </script>
 <script src="script.js" defer></script>
 </html>

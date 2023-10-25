@@ -51,14 +51,26 @@ body {
 .inputBox > label {
     font-size: large;
     color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .inputBox > h2 {
     font-size: xx-large;
     margin-bottom: 10px;
     color: #9932cc;
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-bottom: solid white 1px;
 }
+#preloader {
+    background: #000  url(./loader2.gif) no-repeat center center;
+   background-size: 30%;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+   }
 
 a{
     margin: 0;
@@ -71,6 +83,7 @@ a > button {
     background-color: #720e9e;
     color: white;
     font-size: larger;
+    cursor: pointer;
     font-weight: 700;
     margin-top: 18px
     

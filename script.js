@@ -9,9 +9,9 @@ var finalExpense = '';
 let entryCount = 0;
 
 // prompting the budget
-let Balance;
+var Balance;
 do {
-    let input = prompt("SET BUDGET HERE!");
+    var input = prompt("SET BUDGET HERE!");
 
     Balance = parseInt(input, 10); 
 

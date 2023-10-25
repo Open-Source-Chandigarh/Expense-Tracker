@@ -9,11 +9,18 @@ var finalExpense = '';
 let entryCount = 0;
 
 // prompting the budget
-var Balance = parseInt(prompt("SET BUDGET HERE!"));
-while(Balance<=0){
-    alert("Please Enter a Positive Balance");
-    Balance = parseInt(prompt("SET BUDGET HERE!"));
-}
+let Balance;
+do {
+    let input = prompt("SET BUDGET HERE!");
+
+    Balance = parseInt(input, 10); 
+
+    if (isNaN(Balance) || Balance <= 0) {
+        alert("Please Enter a Positive Balance");
+    }
+
+} while (isNaN(Balance) || Balance <= 0);
+
 document.querySelector('.blcAmount').innerText = Balance;
 document.querySelector('#budget').innerText=Balance;
 

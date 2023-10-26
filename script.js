@@ -32,7 +32,13 @@ saveCalculation();
 
 function findInput() {
     const inputElement = document.querySelector('.expenseInput').value;
-    // const expense = inputElement.value;
+	// const expense = inputElement.value;
+	
+	if (inputElement <= 0) {
+		throw new Error("Expense must be greater than zero!!");
+		return;
+	}
+
     saveCalculation();
     return inputElement;
 };
@@ -43,7 +49,14 @@ function changeBalance() {
 }
 
 function addExpense() {
-    const newexpense = findInput();
+	let newexpense;
+
+	try {
+		newexpense = findInput();
+	} catch (error) {
+		alert(error.message);
+	}
+
     const newcal = finalExpense + '+' + newexpense;
     var answer = eval(newcal);
     saveCalculation();
